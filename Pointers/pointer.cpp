@@ -1,25 +1,17 @@
 #include <iostream>
 using namespace std;
 
-
-//intialising a pointer
-
-//datatype *varname
-
-int a = 20;
-int *p1 = &a; //pointer p1 is pointing to the address of a
-float *p2;
-char *p3;
-
-
 int main()
 {
-    cout << "The value of a is " << a << endl;
-    cout << "The address of a is " << &a << endl;
-    cout << "The value of p1 is " << p1 << endl;
-    cout << "The value of p1 is " << *p1 << endl;
+    int x = 42;
+    int *ptr;
+
+    ptr = &x;
+
+
+    cout << "Printing the address of ptr which is pointing to same address as of x " << ptr << endl;
+    cout << "Printing the value of x using ptr pointer " << *ptr;
+
+
+    return 0;
 }
-
-
-
-
